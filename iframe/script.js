@@ -46,41 +46,12 @@
   function getTheme(theme) {
     var themeObj;
 
-    switch(typeof theme === 'string' ? theme : '') {
-      case 'money':
-        themeObj = {
-          className: theme,
-          logos: ['images/money.png'],
-          headline: 'Please upgrade your plan to proceed.',
-          body: 'Just kidding. You can still get to this site *for now*. But if the FCC ends net neutrality, your cable company could charge you extra fees just to use the websites and apps you want. We can stop them and keep the Internet open, fast, and awesome if we all contact the U.S. Congress and the FCC, but we only have a few days left.'
-        };
-        break;
-      case 'stop':
-        themeObj = {
-          className: theme,
-          logos: ['images/stop.png'],
-          headline: 'This site has been blocked by your ISP.',
-          body: 'Well, not yet. But without net neutrality, cable companies could censor websites, favoring their own business partners. We can stop them and keep the Internet open, fast, and awesome if we all contact the U.S. Congress and the FCC, but we only have a few days left.'
-        };
-        break;
-      case 'slow':
-        themeObj = {
-          className: theme,
-          logos: ['images/slow.png'],
-          headline: 'Sorry, we\'re stuck in the slow lane.',
-          body: 'Well, not yet. Cable companies want to get rid of net neutrality, so they can slow sites like ours to a crawl and shake us down for extra fees just to reach you. If they get their way, the Internet will never be the same. We can stop them and keep the web fast, open, and awesome if we all contact the U.S. Congress and the FCC, but we only have a few days left.'
-        };
-        break;
-      case 'without':
-      default:
-        themeObj = {
-          className: 'without',
-          logos: ['images/slow.png', 'images/stop_gradient.png', 'images/money_gradient.png'],
-          headline: 'This is the web without net neutrality.',
-          body: 'Cable companies want to get rid of net neutrality. Without it, sites like ours could be censored, slowed down, or forced to charge extra fees. We can stop them and keep the Internet open, fast, and awesome if we all contact Congress and the FCC, but we only have a few days left.'
-        };
-        break;
-    }
+    themeObj = {
+      className: theme,
+      logos: ['images/money.png'],
+      headline: 'Sorry, our site is [probably] shutting down!',
+      body: 'Chances are this won\'t be the case. But without the removal of "Open Internet" laws mandating that we don\'t compete for popularity with our funds, we can\'t realistically survive. We can stop them and keep the Internet open, commercial, and democratic if we all contact the U.S. Congress and the FCC, but we only have a few days left.'
+    };
 
     if (typeof theme == 'object') {
       var keys = Object.keys(theme);
