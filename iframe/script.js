@@ -20,23 +20,10 @@
     }
 
     var orgs = {
-      'dp': {
-        code: 'dp',
-        name: 'Demand Progress',
-        url: 'https://demandprogress.org/',
-        donate: 'https://secure.actblue.com/donate/nndayofaction?refcode=20170712-bftn'
-      },
-      'fp': {
-        code: 'fp',
-        name: 'Free Press',
-        url: 'https://www.freepress.net/',
-        donate: 'https://freepress.actionkit.com/donate/single/'
-      },
-      'fftf': {
-        code: 'fftf',
-        name: 'Fight for the Future',
-        url: 'https://www.fightforthefuture.org/',
-        donate: 'https://donate.fightforthefuture.org/campaigns/bftnlanding/'
+      'trump': {
+        code: 'trump',
+        name: 'The FCC',
+        url: 'https://www.fcc.gov/restoring-internet-freedom'
       }
     };
 
@@ -240,11 +227,6 @@
     if (userPhone && phone && phone.value) userPhone.value = phone.value;
 
     var postcode = document.getElementById('postcode');
-
-    var protest = document.getElementById('protest');
-    if (postcode && postcode.value) {
-      protest.setAttribute('href', [protest.href, '?zipcode=', postcode.value].join(''));
-    }
 
     var zipcode = document.getElementById('zipcode');
     if (postcode && postcode.value && zipcode) zipcode.value = postcode.value;
