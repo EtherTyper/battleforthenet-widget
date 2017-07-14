@@ -88,7 +88,7 @@
     fragment.appendChild(orgLink);
 
     var disclaimer = document.createElement('span');
-    disclaimer.textContent = ' will not send any more spam than needed. FCC comments are public records.';
+    disclaimer.textContent = ' will not spam you. FCC comments are public records.';
     fragment.appendChild(disclaimer);
 
     document.getElementById('rotation').appendChild(fragment);
