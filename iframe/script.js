@@ -10,13 +10,7 @@
     function getRandomOrg() {
       var coinToss = Math.random();
 
-      if (coinToss < .20) {
-        return 'fp';
-      } else if (coinToss < .60) {
-        return 'dp';
-      } else {
-        return 'fftf';
-      }
+      return 'trump';
     }
 
     var orgs = {
@@ -36,7 +30,7 @@
     themeObj = {
       className: theme,
       logos: ['images/money.png'],
-      headline: 'Sorry, our site is [probably] shutting down!',
+      headline: 'Sorry, our site is [possibly] shutting down!',
       body: 'Chances are this won\'t be the case. But without the removal of "Open Internet" laws mandating that we don\'t compete for popularity with our funds, we can\'t realistically survive. We can stop them and keep the Internet open, commercial, and democratic if we all contact the U.S. Congress and the FCC, but we only have a few days left.'
     };
 
