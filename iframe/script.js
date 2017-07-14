@@ -76,9 +76,9 @@
     fragment.appendChild(orgInput);
 
     var checkbox = document.createElement('input');
-    checkbox.setAttribute('type', 'checkbox');
+    checkbox.setAttribute('type', 'hidden');
     checkbox.setAttribute('name', 'opt_in');
-    checkbox.setAttribute('checked', 'checked');
+    checkbox.setAttribute('checked', 'unchecked');
     fragment.appendChild(checkbox);
 
     var orgLink = document.createElement('a');
@@ -88,7 +88,7 @@
     fragment.appendChild(orgLink);
 
     var disclaimer = document.createElement('span');
-    disclaimer.textContent = ' will contact you about future campaigns. FCC comments are public records.';
+    disclaimer.textContent = ' will not send any more spam than needed. FCC comments are public records.';
     fragment.appendChild(disclaimer);
 
     document.getElementById('rotation').appendChild(fragment);
