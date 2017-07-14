@@ -1,4 +1,8 @@
-# How to install the widget
+# Battle For Capitalism Widget
+
+#### Note: This widget is the _exact opposite_ of the Battle for the Net widget. I have different beliefs about what's best for the Internet ecosystem, and the Internet provision market. So, I decided to make a widget for my own website that better reflects my opinions. Feel free to use it, as it's available under the same license as the original.
+
+## How to install the widget
 
 Add this to any page, and you're golden: ([**See the demo!**](https://widget.battleforthenet.com/demos/modal.html))
 
@@ -14,7 +18,7 @@ visitors to contact Congress and the FCC.
 If you have any problems or questions regarding the widget, please [submit an issue](https://github.com/EtherTyper/battleforthenet-widget/issues).
 
 
-# How it works
+## How it works
 
 The widget is designed to appear on July 12, 2017, and only once, per user, per device. If you'd like to force it to show up on your page for testing, please reload the page with `#ALWAYS_SHOW_BFTN_WIDGET` at the end of the URL.
 
@@ -31,7 +35,7 @@ be embedding on your page.
 * The user can dismiss the `iframe` and a cookie is written so it won't show again (unless you override).
 
 
-#### Modal customization options:
+### Modal customization options:
 
 If you define an object called `_bftn_options` before including the widget code,
 you can pass some properties in to customize the default behavior.
@@ -40,27 +44,13 @@ you can pass some properties in to customize the default behavior.
 <script type="text/javascript">
   var _bftn_options = {
     /*
-     * Choose from 'money', 'stop', and 'slow'. Omit this property to get the 
+     * Choose from 'trump', 'trump', and 'trump'. Omit this property to get the 
      * default theme.
      */
-    theme: 'slow', // @type {string}
+    theme: 'trump', // @type {string}
     
     /*
-     * Or, if you want your own custom theme, specify its properties here.
-     * Unspecified options will fall back to the default values.
-     */
-    theme: {
-      className: 'money', // @type {string} will be applied to iframe body tag
-      logos: ['images/money.png', 'images/stop.png'], // @type {Array} img src values
-      headline: 'Your headline here.', // @type {string} modal headline text
-      body: 'Your body here.' // @type {string} modal body text
-    },
-    
-    /*
-     * Choose from 'fp' for Free Press, 'dp' for Demand Progress or
-     * 'fftf' for Fight for the Future. Omit this property to randomly split
-     * form submissions between all organizations in the Battle for the Net 
-     * coalition.
+     * Choose 'trump'.
      */
     org: 'fftf', // @type {string}
     
