@@ -7,21 +7,11 @@
   var callScript = document.getElementById('script');
 
   function getOrg(org) {
-    function getRandomOrg() {
-      var coinToss = Math.random();
-
-      return 'trump';
-    }
-
-    var orgs = {
-      'trump': {
-        code: 'trump',
-        name: 'The FCC',
-        url: 'https://www.fcc.gov/restoring-internet-freedom'
-      }
+    return {
+      code: 'trump',
+      name: 'The FCC',
+      url: 'https://www.fcc.gov/restoring-internet-freedom'
     };
-
-    return orgs.hasOwnProperty(org) ? orgs[org] : orgs[getRandomOrg()];
   }
 
   function getTheme(theme) {
